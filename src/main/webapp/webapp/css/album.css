@@ -1,0 +1,531 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+li{
+	text-align: center;
+}
+
+body{
+	background-image: url(../images/p_background.jpg);
+	background-position: center 100%;
+	font-family: "微软雅黑",sans-serif;
+	overflow-x: hidden;
+}
+
+h1{
+	text-align: right;
+}
+
+button{
+	border: 1px solid #aed9e7;
+	cursor: pointer;
+}
+
+a, .pic, .pho, p, #add{
+	cursor: pointer;
+}
+
+.clear_float{
+	clear: both;
+}
+
+#nev2{
+	width: 63%;
+	border-radius: 5px;
+}
+
+.container{
+	width: 63%;
+	margin: 13px auto;
+	background-color: rgba(207, 234, 245, 0.68);
+	border-radius: 5px;
+	/*border: 1px solid black;*/
+}
+
+#contain_photo{
+	padding-bottom: 30px;
+	overflow: hidden;
+}
+
+.main_content{
+	/*border: 1px solid blue;*/
+}
+
+.function_bar{
+	width: 63%;
+	/*border: 1px solid red;*/
+}
+
+.btn_cre_alb{
+	width: 206px;
+	height: 54px;
+	margin: 23px 30px;
+	background-image: url(../images/p_create_albums.png);
+	background-position: 206px 53px;
+	border-radius: 5px;
+} 
+
+.btn_edit{
+	width: 154px;
+	height: 47px;
+	margin: 18px 9px;
+	background-image: url(../images/p_manage.png);
+	background-position: 154px 47px;
+	border-radius: 5px;
+}
+
+.btn_loadup, .btn_edit_pho{
+	position: relative;
+	bottom: 18px;
+	margin: 10px 30px;
+	border: 1px solid #bbdfec;
+	border-radius: 5px;
+}
+
+.btn_loadup{
+	background-image: url(../images/p_upload.png);
+	background-position: 144px 45px;
+    height: 42px;
+    width: 133px;
+}
+
+.btn_edit_pho{
+	background-image: url(../images/p_delete_photo.png);
+	background-position: 144px 45px;
+    height: 42px;
+    width: 133px;
+}
+
+.pic{
+	width: 100%;
+	heigt:70%;
+}
+
+.img_cov{
+	display: inline-block;
+	overflow: hidden;
+	height: 125px;
+	margin: 30px 35px 2px 38px;
+	padding: 6px;
+	/*background-color: gray;*/
+}
+
+.img_cov img{
+	width: 159px;
+	height: 131px;
+}
+
+.pho{
+	height: 158px;
+    width: 188px;
+}
+
+#contain_album{
+    overflow: hidden;
+	/*border: 1px solid blue;*/
+}
+
+.every_album{
+	float: left;
+	position: relative;
+	width: 223px;
+	height: 224px;
+	margin: 30px -7px 30px 26px;
+	background-color: white;
+	/*border: 1px solid green;*/
+	border-radius: 2px;
+	/*text-align: center;*/
+}
+
+.every_photo{
+	float: left;
+	position: relative;
+	width: 223px;
+	height: 200px;
+	margin: 46px 2px -34px 25px;
+/*	border: 1px solid green;*/
+	text-align: center;
+}
+
+.alb_cov{
+	z-index: 1;
+	width: 223px;
+	height: 180px;
+	/*border: 1px solid red;*/
+}
+
+.photo{
+	z-index: 1;
+	height: 146px;
+/*	border: 1px solid red;*/	
+}
+
+.pho_count{
+	position: relative;
+	z-index: 5;
+    margin: -44px 5px;
+	font-size: 1.7em;
+	color: white;
+}
+
+.name_alb{
+	font-size: 1.7em;
+}
+
+.lock{
+	float: right;
+	z-index: 6;
+	margin: 14px 15px;
+	/*border: 1px solid purple;*/
+}
+
+#create_alb{
+	position: fixed;
+	display: none;
+	z-index: 11;
+	top: 28%;
+	left: 36%;
+	width: 630px;
+	/*height: 350px;*/
+	border: 1px solid gray;
+	border-radius: 5px;
+	background-color: white;
+}
+
+#enter_pw{
+	position: fixed;
+	display: none;
+	top: 28%;
+	left: 36%;
+	width: 635px;
+	z-index:10;
+	/*height: 350px;*/
+	border: 1px solid gray;
+	background-color: white;
+}
+.pwErr1, .pwErr2, .clear_container, .delete_container, .delete_btn{
+	display: none;
+}
+
+.top_bar{
+	height: 55px;
+	background-color: #f3f0ef;
+	border-radius: 5px;
+	/*border: 1px solid black;*/
+
+}
+
+.top_bar span{
+	display: inline-block;
+    margin: 8px 19px;
+	font-size: 1.6em;
+	/*font-weight: bold;*/
+	letter-spacing: 4px;
+
+}
+
+.top_bar .close{
+	float: right;
+	height: 100%;
+}
+
+#last_bar{
+	margin-top:20px; 
+}
+
+#last_bar2{
+	margin-top:20px;
+}
+
+.inputarea{
+	height: 40px;
+	margin: 12px 40px;
+	padding: 12px 10px;
+	/*border: 1px solid red;*/
+	letter-spacing: 4px;
+}
+
+.inputarea_pw, .inputarea_pw_new,.inputarea_pw_check {
+	height: 40px;
+	margin: 0 40px;
+	padding: 12px 10px;
+	font-size: 1em;
+	letter-spacing: 4px;
+}
+
+.inputarea_pri{
+	height: 40px;
+	margin: 0 40px;
+	padding: 12px 10px;
+}
+
+.privacy_sel{
+	width: 200px;
+	height: 40px;
+	margin: 0 4px;
+	font-size: 1em;
+}
+
+label{
+	margin-right: 10px;
+	font-size: 1.4em;
+	letter-spacing: 4px;
+}
+
+input{
+	width: 280px;
+	height: 40px;
+	padding: 0 11px;
+	font-size: 1em;
+}
+
+.btn_bar{
+	float: right;
+	margin: 43px 20px 12px;
+	padding: 0 5px;
+}
+
+.sure, #check{
+	width: 90px;
+	height: 45px;
+	background-color: #f09977;
+	border-radius: 5px;
+	font-size: 1.2em;
+}
+
+.cancel, #cancel_check{
+	width: 90px;
+	height: 45px;
+	border-radius: 5px;
+	font-size: 1.2em;
+}
+
+.nameErr1, .nameErr2, .pwErr1, .pwErr2{
+	margin-left: 125px;
+	color: red;
+}
+
+.list{
+	position: absolute;
+	display: none;
+	right: 0;
+	z-index: 10;
+	/*width: 120px;
+	background-color: #eef9fd;
+	border: 1px solid black;*/
+	text-align: center;
+	
+}
+
+.list_detail img{
+	/*display: inline-block;*/
+}
+
+.list_detail p{
+	display: inline;
+	margin: 0 6px;
+}
+
+.list_detail div{
+	width: 112px;
+	margin: 13px 22px 10px 5px;
+}
+
+.delete_btn{
+	position: absolute;
+	display: none;
+	z-index: 6;
+	top: 5px;
+	right: 17px;
+	width: 40px;
+	height: 40px;
+	/*border: 1px solid black;*/
+	cursor: pointer;
+}
+
+.delete_btn img{
+	height: 25px;
+    width: 25px;
+}
+
+.list_btn{
+	float: right;
+	position: relative;
+	right: 5px;
+	width: 20px;
+	height: 15px;
+	margin: 4px -1px 0;
+	background-color: #eef9fd;
+	cursor: pointer;
+}
+
+.list_detail{
+	display: none;
+	width: 137px;
+	padding: 1px 0;
+	background-color: #eef9fd;
+}
+
+#change_container{
+	position: fixed;
+	display: none;
+	z-index: 15;
+	top: 28%;
+	left: 36%;
+	width: 630px;
+	/*height: 350px;*/
+	border: 1px solid gray;
+	background-color: white;
+}
+
+#bottom{
+	margin-top:20px; 
+}
+
+.inner_bar{
+	margin-left: 20px; 
+	font-size: 1.8em;
+	font-weight: bold;
+	text-align: left;
+	color: gray;
+}
+
+.sure_change{
+	width: 90px;
+	height: 45px;
+	background-color: #f09977;
+	border-radius: 5px;
+	font-size: 1.2em;
+}
+
+/*图片上传*/
+#upload_window{
+	display: none;
+	margin: 0 auto;
+	border: 1px solid black;
+	background-color: rgba(207, 234, 245, 0.68);
+	opacity:0.7;
+	filter:alpha(opacity=70);
+}
+
+#dropbox span img{
+	width: 20px;
+	height: 20px;
+	margin: 10px 30px;
+}
+
+#input{
+	display: none;
+}
+
+#add{
+	margin: 10px -23px;
+}
+
+.add_img{
+	margin: 11px 20px;
+}
+
+#dropbox{
+	/*position: relative;*/
+	width: 90%;
+	height: 98%;
+	margin: 0 auto;
+}
+
+.file_img{
+	position: relative;
+	float: left;
+	display: inline;
+	width: 180px;
+	height: 180px;
+	margin: 10px 20px;
+}
+
+#dropbox img{
+	width: 200px;
+	height: 180px;
+}
+
+#dropbox span{
+	display: inline-block;
+    position: absolute;
+    right: -20px;
+    top: 0;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+#upload{
+	display: none;
+	margin: 10px auto;
+	width: 80px;
+	padding: 20px;
+	font-size: 30px;
+	border-radius: 20px;
+	background-color: #a29e9e;
+	text-align: center;
+	cursor: pointer;
+}
+
+.cancel_upload{
+	background-color: #61b1e2;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.5em;
+    height: 58px;
+    letter-spacing: 7px;
+    margin: 14px 40px;
+    width: 147px;
+}
+
+#close{ 
+	background: rgba(0, 0, 0, 0) url("../images/p_close.png") no-repeat scroll 0 0;; 
+	width:51px; 
+	height:51px; 
+	cursor:pointer; 
+	position:absolute; 
+	right:2px; 
+	top:3px; 
+	text-indent:-999em;
+}
+
+#mask{ 
+	background-color:#000;
+	opacity:0.5;
+	filter: alpha(opacity=50); 
+	position:absolute; 
+	left:0;
+	top:0;
+	z-index:1000;
+}
+
+#enlarge{ 
+	position:fixed;
+	z-index:1001;
+	}
+
+#enlarge_con{ 
+	position:relative;
+	overflow: hidden;
+    width: 880px;
+    height: 680px;
+/*    background: url(img/loginBg.png) #2A2C2E center center no-repeat;*/
+	text-align: center;
+}
+
+#enlarge_con img{
+	max-width: 1000px;
+	max-height: 650px;
+	mid-width: 50px;
+	mid-height: 50px;
+}
+
+table{
+	width: 900px;
+	height: 900px;
+}

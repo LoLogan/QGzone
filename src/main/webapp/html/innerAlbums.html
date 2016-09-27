@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>album</title>
+	<meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../css/nev.css">
+	<link rel="stylesheet" type="text/css" href="../css/album.css">
+    <script type="text/javascript" src="../js/jquery-3.1.0.js"></script>
+    <script type="text/javascript" src="../js/nev2.js"></script>
+	<script type="text/javascript" src="../js/upload.js"></script>
+</head>
+<body>
+	<div id="nev_1">
+        <ul id="nevLeft">
+            <li class="circle_1_paddingSmall"><img id="circle_1" src="../images/c_logo.png"></li>
+            <li class="color_white"><a href="selfIndex.html">个人中心</a></li>
+            <li><a href="index.html">我的主页</a></li>
+            <li><a href="friend.html">我的好友</a></li>
+        </ul>
+        <ul id="nevRight">
+            <li><a href="#"><img src="../images/c_exit.png"></a></li>
+            <li><a href="#"><img src="../images/c_user.png"></a></li>
+            <li><a href="me.html"><img src="../images/c_withMe.png"></a></li>
+            <li class="p_margin"><p>QGBB</p></li>
+            <li class="diamonds_1_paddingSmall"><div id="circle_2"><img src=""></div></li>
+        </ul>
+    </div>
+    <div id="nev2">
+        <div id="diamonds_2"><img src=""></div>
+        <p id="n_name">QGBB</p>
+        <div id="option">
+            <ul>
+                <li class="marginSmall"><a href="TwitterList.html">说说</a></li>
+            <li><a href="private_album.html">相册</a></li>
+            <li><a href="NoteList.html">留言板</a></li>
+            <li><a href="personInformation.html">个人档</a></li>
+            </ul>
+        </div>
+    </div>
+	<div class="container">
+<!-- 相册功能键 -->
+		<div class="function_bar">
+			<div class="img_cov">
+				<img src="../images/alb_cov.png">
+			</div>
+			<button class="btn_loadup" type="buttom">
+				上传图片
+			</button>
+			&nbsp&nbsp&nbsp
+			<button class="btn_edit_pho" type="buttom">
+				编辑图片
+			</button>
+		</div>
+<!-- 图片 -->
+		<div id="contain_photo">
+			
+		</div>
+
+		<!-- 上传窗口 -->
+		<div id="upload_window">
+			<input type="file" id="input" multiple="multiple" accept="image/*">
+			<button class="cancel_upload">取消</button>
+			<div id="dropbox">
+				<div id="add"><img src="../images/add.gif"></div>
+			</div>
+			<div id="upload">上传</div>
+		</div>
+	</div>
+	
+	<!-- <div id="float_container"> -->
+		<!-- <div id="mask"></div>
+		<div id="enlarge">
+			<div id="enlarge_con">
+				<div id="close">
+					关闭
+				</div>
+				<img src="getPho.jpg">
+			</div>
+		</div> -->
+	<!-- </div> -->
+</body>
+</html>

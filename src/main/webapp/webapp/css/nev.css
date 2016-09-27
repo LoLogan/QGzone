@@ -1,0 +1,145 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td{margin:0;padding:0;}
+ul{
+	list-style-type: none;
+}
+li{
+	text-align: center;
+}
+body{
+	font-family: "微软雅黑",sans-serif;
+	min-width: 830px;
+	background-image: url(../images/c_friend_background.jpg);
+	background-position: 0 -90px;
+	background-repeat:no-repeat; 
+	background-attachment:fixed
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+a:active{
+	color: white; 
+}
+.color_white{
+	background-color: rgba(255, 255, 255, 0.57);
+}
+#nev_1{
+    overflow: hidden;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 2;
+    color: white;
+    background-color: #6b6b6b;
+}
+.hide{
+	display: none;
+}
+#nevLeft{
+    float: left;
+    width: 56%;
+}
+#nevLeft li{
+    float: left;
+    padding: 18px 2.1%;
+}
+li a{
+	color: white;
+    font-size: 18px;	
+}
+
+#nevLeft .paddingLeft{
+    font-size: 24px;
+	padding: 12px 15.4% 13px 0;
+}
+#nevLeft .circle_1_paddingSmall{
+    padding: 9px 8% 0px 13.4%;
+}
+#nevLeft #circle_1{
+	height: 40px;
+}
+
+#nevRight{
+	float: right;
+    width: 44%;
+}
+
+#nevRight li{
+    float: right;
+    padding: 18px 4.2% 0;
+}
+
+#nevRight .diamonds_1_paddingSmall{
+	padding: 15px 0 0 0;
+}
+#nevRight .p_margin{
+    padding: 19px 9% 0 10px;
+}
+#nevRight #circle_2{
+	height: 30px;
+	width: 30px;
+	border-radius: 50%;
+	overflow:hidden;
+}
+#circle_2 img{
+	height: 30px;
+	width: 30px;
+}
+#whiteLine{
+	clear: both;
+	height: 3px;
+	background-color: white;
+	border-top: 1px solid black;
+}
+
+/*nev2-----------------------------------------------------------------------------------------*/
+#nev2{
+    overflow: hidden;
+    width: 66%;
+    margin: 60px auto 0;
+    height: 230px;
+    background-color: #74c7ed;
+}
+
+#diamonds_2 img{
+	float: left;
+	margin: 50px 0 0 50px;
+	height: 120px;
+	width: 120px;
+}
+
+#n_name{
+	float: left;
+	margin-top: 55px;
+	margin-left: 10px;
+}
+
+#nev2 #option{
+    margin-top: 177px;
+	text-align: center;
+}
+
+#nev2 ul{
+    display: inline;
+    margin-left: 18%;
+}
+#nev2 .marginSmall{
+	margin-left: 0;
+}
+#nev2 li{
+	display: inline;
+	color: white;
+	font-size: 30px;
+	margin-left: 14%;
+	font-family: "微软雅黑";
+}
+
+#nev2 a{
+	text-decoration: none;
+	color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+#nev2 a:active{
+	color: black; 
+}

@@ -1,0 +1,293 @@
+
+
+/*--------------------------------------------------------------------------------*/
+#container_1{
+	position: relative;
+    overflow: hidden;
+    margin: 6px auto 0;
+}
+
+#container_1 #photo_2{
+    float: left;
+    width: 50%;
+    height: 200px;
+    margin: 48px 25%;
+}
+#container_1 #c1_left{
+    float: left;
+    width: 22%;
+    height: 659px;
+    margin-left: 17%;
+    background-color: rgba(167,214,236,0.56);
+}
+#container_1 #c1_right{
+    float: left;
+    width: 43.7%;
+    height: 659px;
+    margin-left: 0.3%;
+    background-color: rgb(205, 232, 244);
+}
+
+#container_1 p{
+	font-size: 20px;
+	margin: 40px 20px 20px 20px;
+}
+
+#container_1 ul{
+    float: left;
+    margin-left: 41px;
+}
+#container_1 li{
+	line-height: 40px;
+	text-align: left;
+}
+#container_1 .p1{
+	margin-right: 50px;
+	border: 1px solid red;
+	text-align: left;
+}
+
+#container_1 #change{
+    position: absolute;
+    right: 19%;
+    text-decoration: none;
+    cursor: pointer;
+    color: #38afe6;
+}
+
+#container_1 #val{
+	margin-left: 50px;
+}
+
+
+/*--------------------------------------------------------------------------------*/
+#container_2{
+	position: relative;
+    overflow: hidden;
+    margin: 6px auto 0;
+}
+
+#container_2 #c2_left{
+    float: left;
+    margin-left: 17%;
+    width: 22%;
+    height: 659px;
+    background-color: rgba(167,214,236,0.56);
+}
+#c2_left span{
+	position: relative;
+	top: 20px;
+	padding: 2px;
+	font-size: 30px;
+	background-color: rgb(205, 232, 244);
+}
+
+#c2_left div{
+    margin: 19px auto 70px;
+    width: 96%;
+    text-align: center;
+    border-bottom: 1px solid #868585;
+}
+
+#c2_left li{
+	padding: 20px;
+	font-size: 25px;
+	cursor: pointer;
+}
+.color_white{
+	background-color: rgba(255, 255, 255, 0.57);
+}
+
+#c2_right{
+    margin-left: 0.3%;
+    float: left;
+    width: 43.7%;
+    height: 659px;
+    background-color: #cfeaf5;
+}
+
+#select_sex{
+	padding-left: 10px;
+	width: 41.4%;
+	height: 41px;
+	font-size: 18px;
+	-webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 0.01px;
+    text-overflow: ' ';
+    border:1px solid white;
+	-webkit-box-shadow:inset 0 1px 2px rgba(0,0,0,.1);
+	-moz-box-shadow:inset 0 1px 2px rgba(0,0,0,.1);
+	box-shadow:inset 0 1px 2px rgba(0,0,0,.1);
+}
+
+.hide{
+	display: none;
+}
+#c2_right .p1{
+	margin: 25px;
+	font-size: 25px;
+}
+
+#c2_right .name{
+	line-height: 44px;
+	margin-left: 10px;
+	padding-right: 50px;
+	background-color: white;
+}
+#c2_right #first .car_right{
+	padding-right: 29px;
+}
+#c2_right .toChange{
+	float: right;
+	line-height: 44px;
+	margin-right: 20px;
+	cursor: pointer;
+	color: #38afe6;
+}
+.whiteDiv{
+	margin: 10px auto;
+	width: 90%;
+	height: 44px;
+	background-color: white;
+}
+
+#c2_right #first input{
+	margin-top: 2px;
+	width: 40%;
+	height: 40px;
+	padding-left: 10px;
+	font-size: 18px;
+	border:1px solid white;
+	-webkit-box-shadow:inset 0 1px 2px rgba(0,0,0,.1);
+	-moz-box-shadow:inset 0 1px 2px rgba(0,0,0,.1);
+	box-shadow:inset 0 1px 2px rgba(0,0,0,.1);
+}
+/*日历格式*/
+::-webkit-inner-spin-button { visibility: hidden; }
+/* ::-webkit-clear-button {
+     -webkit-appearance: none; 
+} */
+#second img{
+	height: 220px;
+	width: 220px;
+	margin: 0 0 0 30px;
+}
+
+#changePassword{
+    position: absolute;
+    top: 130px;
+    left: 42%;
+    background-color: #ffffff;
+    width: 34%;
+}
+
+.p2{
+    font-size: 24px;
+    padding: 5px 20px;
+    line-height: 40px;
+    background-color: #f2f0f1;
+}
+
+#changePassword label{
+    font-size: 18px;
+    margin-left: 17px;
+}
+
+#changePassword input[type="password"]{
+	width: 66%;
+    height: 38px;
+    font-size: 18px;
+    padding-left: 10px;
+    border: 0.1px solid #cccccc;
+}
+#changePassword input[type="text"]{
+	width: 66%;
+    height: 38px;
+    font-size: 18px;
+    padding-left: 10px;
+    border: 0.1px solid #cccccc;
+}
+#changePassword .eye{
+    display: inline-block;
+    position: relative;
+    top: 18px;
+    right: 43px;
+    width: 33px;
+    height: 29px;
+    background: url(../images/c_eye.png) no-repeat 0 0.5px;
+    background-size: 30px;
+    cursor: pointer;
+}
+#changePassword div{
+	margin-left: 30px;
+    margin-top: 18px;
+}
+#change_button{
+
+}
+.right_button{
+    margin: 40px 30px 20px 0;
+    float: right;
+    width: 74px;
+    height: 40px;
+    font-size: 14px;
+    color: #fff;
+    border-radius: 7px;
+}
+.right_button[name="cancel"]{
+	margin-right: 10%;
+}
+.orange{
+    background: #ff9e74;
+}
+.gray{
+     background: #bdbdbd;
+}
+.closeButton{
+    float: right;
+    margin: 13px -3px 0 0;
+    width: 20px;
+    height: 20px;
+    background: url(../images/c_x_delete.png) no-repeat;
+    border: none;
+}
+#changeProblem{
+    position: absolute;
+    top: 130px;
+    left: 42%;
+    width: 34%;
+    font-size: 18px;
+    background-color: #ffffff;
+}
+.hid{
+	display: block;
+	margin-left: 30px;
+    overflow: hidden;
+}
+.question{
+    margin-top: 18px;
+    padding-left: 10px;
+    width: 70%;
+    height: 38px;
+    font-size: 18px;
+    background-image: url(../images/001.png);
+    background-repeat: no-repeat;
+    background-size: 16px;
+    background-position: 389px -1px;
+    -webkit-appearance: none;
+    text-indent: 0.01px;
+    text-overflow: ' ';
+}
+.left_space{
+	margin-left: 30px;
+}
+.left_space input[type="text"]{
+    margin-top: 18px;
+    margin-left: 54px;
+    padding-left: 10px;
+    width: 68%;
+    height: 38px;
+    font-size: 18px;
+    border: 0.1px solid #cccccc;
+}

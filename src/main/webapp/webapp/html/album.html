@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>图片上传</title>
+	<script type="text/javascript" src="../js/jquery-3.1.0.js"></script>
+</head>
+<style type="text/css">
+div, img, span {
+	margin: 0;
+	padding: 0;
+}
+#input{
+	display: none;
+}
+#sure{
+	display: none;
+}
+#dropbox{
+	margin: 50px auto;
+	width: 610px;
+	height: 400px;
+	border: 1px solid blue;
+}
+#dropbox div{
+	position: relative;
+	float: left;
+	width: 200px;
+	height: 200px;
+}
+#dropbox img{
+	width: 200px;
+	height: 200px;
+}
+#dropbox span{
+	display: inline-block;
+    position: absolute;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    background-color: yellow;
+    cursor: pointer;
+}
+</style>
+<body>
+	<input type="file" id="input" multiple="multiple" accept="image/*">
+	<a href="#" id="fileSelect">选择文件</a>
+	<button id="sure">上传</button>
+	<div id="dropbox">
+		
+	</div>
+
+</body>
+<script type="text/javascript">
+$(function(){
+
+	var array = new Array();
+//通过链接模拟点击input file----------------------------------
+	$("#fileSelect").click(function(e){
+		if($("#input")[0]){
+			$("#input").click();
+		}
+		e.preventDefault();
+	});
+
+//显示上传按钮----------------------------------------------
+	$("#input").change(function(){
+		var fileList = this.files;
+		if(fileList.length>0){
+			for(var i=0;i<fileList.length;i++){
+				array.push(fileList[i]);
+				showPhoto(fileList[i]);
+			}
+			console.log(array);
+			$("#sure").show();
+		}
+	});
+
+
+//点击上传按钮上传文件---------------------------------------------
+	$("#sure").click(function(){
+		var formData = new FormData();
+		var haveFile = false;
+		for(var i=0; i<array.length; i++){
+			if(array[i]!=undefined){
+				formData.append("file"+i,array[i]);
+				haveFile = true;
+			}
+		}
+		if(haveFile){
+			$.ajax({
+				url:"http://10.21.56.121:8080/QGzone/UserUploadImage",
+				type:"POST",
+				data:formData,
+				processData: false,
+				contentType: false,
+				success:function(data){
+					array.length=0;
+					$("#dropbox").empty();
+					console.log(data);
+					alert("上传成功!");
+				},
+				dataType:"json"
+			});
+		}
+		
+	});
+
+//删除图片-----------------------------------------------------------
+	$("#dropbox").click(function(e){
+		var e = $(e.target);
+		if(e[0].nodeName.toUpperCase() != "SPAN"){
+			return ;
+		}
+		var filename = e.parent().attr("filename");
+		deleteFile(filename);
+		e.parent().remove();
+	})
+
+	function deleteFile(filename){
+		for(var i=0;i<array.length;i++){
+			if(array[i]!=undefined&&array[i].name == filename){
+				array[i] = undefined;
+				return ;
+			}
+		}
+	}
+
+//图片预览--------------------------------------------------------------
+	function showPhoto(file){
+		var reader = new FileReader();
+		reader.onload = function (e) {
+			var dataURL = reader.result;
+			var img = $('<div filename='+file.name+'><img src='+dataURL+' /><span></span></div>');
+			$("#dropbox").append(img)
+		}
+		reader.readAsDataURL(file);
+	}
+
+//图片拖拽---------------------------------------------------------
+	
+	var dropbox = $("#dropbox")[0];  
+	dropbox.addEventListener("dragenter", dragenter, false);
+	dropbox.addEventListener("dragover", dragover, false);
+	dropbox.addEventListener("drop", drop, false);   
+	
+	function dragenter(e) {
+		e.stopPropagation();
+		e.preventDefault();
+	}
+	function dragover(e) {
+	  	e.stopPropagation();
+	  	e.preventDefault();
+	}
+	function drop(e) {
+	  	e.stopPropagation();
+	  	e.preventDefault();
+
+		var dt = e.dataTransfer;
+		var fileList = dt.files;
+		console.log(fileList.length);
+		console.log(fileList);
+		if(fileList.length>0){
+			for(var i=0; i<fileList.length; i++){
+				console.log(i);
+				array.push(fileList[i]);
+				showPhoto(fileList[i]);
+			}
+			$("#sure").show();
+		}
+	}
+
+})
+</script>
+</html>

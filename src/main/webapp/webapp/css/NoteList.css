@@ -1,0 +1,226 @@
+
+    /*****content******/
+    #wrapper{
+    width:100%;
+    margin:auto;
+    }
+    /*发表留言样式*/
+    #create-note{
+	position: relative;
+    margin: auto;
+    margin-top: 13px;
+    width: 65%;
+    height: 152px;
+    padding: 11px;
+    background: #caebf4;
+    background-size: cover;
+    }
+    #create-note .txt{
+    border: 1px solid #eee;
+    display: block;
+    margin: 0 auto;
+    height: 90px;
+    width: 93%;
+    padding: 5px;
+    resize: none;   
+    font-size:22px;
+    border-radius:7px;
+    }
+    #create-note .create-btn {
+    position: absolute;
+    right: 54px;
+    width: 72px;
+    height: 36px;
+    margin-top: 16px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #fff;
+    background: #ff946a;
+    border-radius:7px;
+    }
+    #create-note .btn-off {
+    border: 1px solid #ccc;
+    color: #ccc;
+    background: #F7F7F7;
+    }
+    #create-note .word{
+    position: absolute;
+    right: 141px;
+    top: 139px;
+    margin: 7px 10px 0 0;
+    padding: 1px;
+    color: #666;
+    }
+    /*****Twitter******/
+    #list {
+    margin: 0 auto;
+    text-align: left;
+    width: 63%;
+    padding: 25px;
+    font-size:16px;
+    margin-top:10px;
+    }
+    .box {
+    position: relative;
+    width: 91%;
+    padding: 20px 0;
+    margin: auto;
+    margin-bottom:15px;
+    }
+    .box:hover .close {
+    display: block;
+    }
+    .close {
+    display: none;
+    top:0px;
+    right: 0px;
+    width: 28px;
+    height: 28px;
+    border: 1px solid #eee;
+    position: absolute;
+    background: #f2f4f7;
+    line-height: 27px;
+    text-align: center;
+    }
+    .close:hover {
+    background: #c8d2e2;
+    text-decoration: none;
+    }
+    .head {
+	float: left;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    margin: 0 0 0 8%;
+    }
+    .content {
+    float: left;
+    width: 83%;
+    }
+    .main {
+    margin-bottom: 10px;
+    }
+    .txt {
+    margin-bottom: 10px;
+    }
+    .user {
+    font-size: 22px;
+    color: #369;
+    display: inline-block;
+    margin: 2% 14px 7px 2%;;
+    }
+    .user+span{
+    display: block;
+    width:92%;
+    margin: 13px;
+    word-break: break-all;
+    }
+    .pic {
+	margin: 2px 6px 8px 13px;
+    height: 166px;
+    width: 190px;
+    text-align: center;
+    border: 6px solid #eee;
+    box-shadow: 0 0 5px;
+}
+    }
+    .info {
+    height: 20px;
+    line-height: 19px;
+    font-size: 12px;
+    margin: 0 0 10px 0;
+    padding:10px;
+    }
+    .info .time {
+    color: #ccc;
+    float: left;
+    height: 20px;
+    padding-left: 20px;
+    background: url("../images/bg1.jpg") no-repeat left top;
+    }
+    .comment-box {
+    padding: 10px 0;
+    border-top: 1px solid #eee;
+    }
+    .comment-box:hover {
+    background: rgb(247, 247, 247);
+    }
+    .comment-box .myhead {
+    float: left;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    margin-right: 3px;
+    margin-left: 10px;
+    }
+    .comment-box .comment-content {
+    float: left;
+    width: 750px;
+    }
+    .comment-box .comment-content .comment-time {
+    color: #ccc;
+    margin-top: 3px;
+    line-height: 16px;
+    position: relative;
+    }
+    .comment-box .comment-content .comment-operate {
+    display: none;
+    color: #369;
+    height: 20px;
+    position: absolute;
+    bottom: 0px;
+    right: 10px;
+    }
+    .comment-box .comment-content:hover .comment-operate {
+    display: inline-block;
+    }
+    .text-box .comment {
+    border: 1px solid #eee;
+    display: block;
+    height: 20px;
+    width: 97%;
+    padding: 11px;
+   	margin-top:16px;
+    resize: none;
+    border:1px solid #323232;
+    border-radius:7px;
+    color:#323232;
+    }
+    .text-box .btn {
+    font-size: 12px;
+    font-weight: bold;
+    display: none;
+    float: right;
+    width: 65px;
+    height: 25px;
+    border: 1px solid #0C528D;
+    color: #fff;
+    background: #4679AC;
+    margin-top:4px;
+    }
+    .text-box .btn-off {
+    border: 1px solid #ccc;
+    color: #ccc;
+    background: #F7F7F7;
+    }
+    .text-box .word{
+    display: none;
+    float: right;
+    margin: 7px 10px 0 0;
+    color: #666;
+    }
+    .text-box-on .comment{
+    height: 50px;
+    color: #333;
+    }
+    .text-box-on .btn{
+    display: inline;
+    }
+    .text-box-on .word{
+    display: inline;
+    }
+    
+    
+    
+     
+    

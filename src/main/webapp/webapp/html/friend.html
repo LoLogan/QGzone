@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>我的好友</title>
+	<link rel="stylesheet" type="text/css" href="../css/friend.css">
+	<script type="text/javascript" src="../js/jquery-3.1.0.js"></script>
+	<script type="text/javascript" src="../js/friend.js"></script>
+	<script type="text/javascript" src="../js/nev2.js"></script>
+</head>
+<body>	
+	<div id="nev_1">
+		<ul id="nevLeft">
+			<li class="circle_1_paddingSmall"><img id="circle_1" src="../images/c_logo.png"></li>
+			<li><a href="selfIndex.html">个人中心</a></li>
+			<li><a href="index.html">我的主页</a></li>
+			<li class="color_white"><a href="friend.html">我的好友</a></li>
+		</ul>
+		<ul id="nevRight">
+			<li><a href="login.html"><img src="../images/c_exit.png"></a></li>
+			<li><a href="personInformation.html"><img src="../images/c_user.png"></a></li>
+			<li><a href="me.html"><img src="../images/c_withMe.png"></a></li>
+			<li class="p_margin"><p>QGBB</p></li>
+			<li class="diamonds_1_paddingSmall"><div id="circle_2"><img src=""></div></li>
+		</ul>
+	</div>
+	<div id="header">
+		<div id="h_photo">
+			<img src="../images/head.jpg">
+		</div>
+		<p>121321</p>
+		<ul id="nev2">
+			<li class="leftMargin"><a href="TwitterList.html">说说</a></li>
+			<li><a href="private_album.html">相册</a></li>
+			<li><a href="NoteList.html">留言板</a></li>
+			<li><a href="personInformation.html">个人档</a></li>
+		</ul>
+		<div id="white_bar"></div>
+	</div>
+	<div id="side_bar">
+		<ul>
+			<li class="color_white" index="friend_list">好友列表</li>
+			<li index="add_friend">添加好友</li>
+			<li index="add_request">好友请求</li>
+		</ul>
+	</div>
+	<div id="my_background"></div>
+	<div id="wrap">
+		<div id="friend_list" >  
+			<div id="find_my_friend">
+				<input class="find_input" type="text" placeholder="搜索好友">
+				<div id="glass"></div>
+			</div>
+			<ul id="friends" class="border_top">
+				<li class="not_find hide">你这个单身狗，没有好友，快去约啦……</li>
+			</ul>
+			<ul id="find_my_friend_result" class="border_top">
+				<li class="not_find hide">未找到结果</li>
+			</ul>
+		</div>
+		<div id="add_friend" class="hide">
+			<div id="search">
+				<div id="option_button">
+					<span id="of_name" class="haveChouce">通过昵称</span >
+					<span  id="of_account">通过账号</span >
+				</div>
+				<div id="find">
+					<input type="text" class="find_input" placeholder="搜索你的新朋友">
+					<span id="find_account"></span>
+					<span id="find_name"></span>
+				</div>
+			</div>
+			<ul id="find_result_list" class="border_bottom">
+				<li class="not_find hide">未找到结果</li>
+				
+			</ul>
+		</div>
+		<div id="add_request"  class="hide">
+			<ul id="request_list" class="border_bottom">
+				<li class="not_find">目前暂时没有请求记录</li>		
+			</ul>
+		</div>
+	</div>
+</body>
+</html>
+
